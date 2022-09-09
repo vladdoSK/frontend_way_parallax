@@ -1,0 +1,136 @@
+.footer {
+    border-top: 10px solid rgb(255, 247, 0);
+    color: rgb(250, 209, 3);
+    font-weight: bold;
+    font-family: cursive;
+    background: #030555;
+    position: relative;
+}
+
+.footer__name-col {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.footer img {
+    position: absolute;
+    height: 50%;
+    cursor: pointer;
+}
+
+.footer__net-github {
+    width: 30px;
+    height: 30px;
+    background: url('../../images/social_net/123.png');
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.footer__net-github:hover {
+    background: url('../../images/social_net/github.png');
+    background-size: cover;
+    transition: .4s;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__net-block {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__net-instagram,
+.footer__net-telegram,
+.footer__net-facebook {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.footer__net-instagram {
+    background: url('../../images/social_net/instagram.png');
+    background-size: cover;
+}
+
+.footer__net-telegram {
+    background: url('../../images/social_net/telegram.png');
+    background-size: cover;
+}
+
+.footer__net-facebook {
+    background: url('../../images/social_net/facebook.png');
+    background-size: cover;
+}
+
+.footer__net-instagram:hover,
+.footer__net-telegram:hover,
+.footer__net-facebook:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.footer__name {
+    margin-top: 20px;
+}
+
+@media (max-width:950px) {
+
+    .footer__name-col {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        border-top: 5px solid rgb(255, 247, 0);
+    }
+
+    .footer__net-block {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:650px) {
+    .column {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:600px) {
+    .column {
+        font-size: 9px;
+    }
+
+    .footer__net-github {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer__net-instagram,
+    .footer__net-telegram,
+    .footer__net-facebook {
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .footer__net-block {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}

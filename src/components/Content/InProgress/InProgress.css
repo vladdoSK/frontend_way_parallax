@@ -1,0 +1,47 @@
+.inProgress{
+    color:rgb(241, 241, 0);
+    display: flex;
+    font-size: 30px;
+    font-family: cursive;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.anim__progress{
+    height: 50px;
+    width: 50px;
+    background: url('../../images/progress.png');
+    background-size: cover;
+
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.anim__progress-1{
+    animation-name: anim_setting_1;
+}
+
+.anim__progress-2{
+    animation-name: anim_setting_2;
+}
+
+@keyframes anim_setting_1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anim_setting_2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,263 @@
+.html__title,
+.html__definition {
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.html__title::before,
+.html__title::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: rgb(247, 247, 4);
+    top: 50%;
+}
+
+.html__title::after {
+    right: 25%;
+}
+
+.html__title::before {
+    left: 25%;
+}
+
+.html__title.active::after,
+.html__title.active::before {
+    width: 8%;
+    transition: 1.5s;
+}
+
+
+@media (max-width:995px) {
+
+    .html__title {
+        font-size: 28px;
+    }
+
+    .html__title.active::after,
+    .html__title.active::before {
+        width: 5%;
+    }
+}
+
+@media (max-width:770px) {
+
+    .html__title.active::after,
+    .html__title.active::before {
+        width: 5%;
+    }
+
+    .html__title::after {
+        right: 20%;
+    }
+
+    .html__title::before {
+        left: 20%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .html__title {
+        font-size: 23px;
+    }
+
+    .html__title.active::after,
+    .html__title.active::before {
+        width: 7%;
+    }
+
+    .html__title::after {
+        right: 15%;
+    }
+
+    .html__title::before {
+        left: 15%;
+    }
+}
+
+@media (max-width:360px) {
+
+    .html__title {
+        font-size: 23px;
+    }
+
+    .html__title.active::after,
+    .html__title.active::before {
+        width: 10%;
+    }
+
+    .html__title::after {
+        right: 10%;
+    }
+
+    .html__title::before {
+        left: 10%;
+    }
+}
+
+.html__definition,
+.html__definition-text {
+    margin-top: 4%;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: left;
+    font-family: cursive;
+    position: relative;
+    margin-left: 3%;
+    color: rgb(247, 247, 4);
+}
+
+.html__definition::before {
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 3px;
+    background: rgb(247, 247, 4);
+    top: 50%;
+    left: -3%;
+}
+
+.html__definition-text {
+    margin-left: 0%;
+    font-size: 20px;
+}
+
+.html__list {
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(247, 247, 4);
+}
+
+.html__list li {
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.html__list.active li:nth-child(1) {
+    transition: all .8s ease 0s;
+}
+
+.html__list.active li:nth-child(2) {
+    transition: all .8s ease 0.2s;
+}
+
+.html__list.active li:nth-child(3) {
+    transition: all .8s ease 0.4s;
+}
+
+.html__list.active li:nth-child(4) {
+    transition: all .8s ease 0.6s;
+}
+
+.html__list.active li:nth-child(5) {
+    transition: all .8s ease 0.8s;
+}
+
+.html__list.active li {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.html__code {
+    display: flex;
+    align-items: center;
+}
+
+.html__code-img {
+    width: 50%;
+    box-shadow: 2px 2px 2px 4px black;
+    transform: scale(0.7);
+    transition: .5s;
+}
+
+.html__code-img.active {
+    transform: scale(1);
+    transition: .8s;
+}
+
+.container__video {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.container__video iframe {
+    width: 60%;
+}
+
+@media (max-width:900px) {
+    .html__definition {
+        font-size: 25px;
+    }
+
+    .html__definition-text {
+        font-size: 18px;
+    }
+    .html__list {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:650px) {
+    .html__definition {
+        font-size: 22px;
+    }
+
+    .html__definition-text {
+        font-size: 15px;
+    }
+    .html__list {
+        font-size: 15px;
+    }
+}
+
+.return__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn_return {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #6ad771 0%, #33de50 50%, #287800 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(235, 231, 8);
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn_return:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+@keyframes animation_back{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}

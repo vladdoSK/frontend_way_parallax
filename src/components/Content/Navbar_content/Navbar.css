@@ -1,0 +1,252 @@
+.step__block{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.step__block-image{
+    width: 50%;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.step__photo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+    opacity:0;
+    transition: .4s;
+    top:-20%;
+}
+
+.step__photo.active{
+    opacity: 1;
+    transition: 1.4s;
+    top: 0;
+}
+
+.step__photo:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+    box-shadow: 2px 2px 2px 4px black;
+}
+
+img{
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+.step__block-text{
+    width: 60%;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    text-align: center;
+    color: transparent;
+    
+    line-height: 25px;
+    font-family: cursive;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+
+    position: relative;
+    bottom: -20%;
+    opacity: 1;
+}
+
+.step__block-text.active{
+    bottom: 0%;
+    transition: 1.4s;
+    color: rgb(246, 226, 6);
+    opacity: 1;
+}
+
+._side__radius-left{
+    border-left: 10px solid rgb(255, 255, 0);
+    border-radius: 200px;
+    position: relative;
+}
+
+._side__radius-left::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 20%;
+    background: rgb(255, 255, 0);
+    left: -22%;
+    top: 50%;
+}
+
+._side__radius-right{
+    border-right: 10px solid rgb(255, 255, 0);
+    border-radius: 200px;
+    position: relative;
+}
+
+._side__radius-right::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 20%;
+    background: rgb(255, 255, 0);
+    right: -22%;
+    top: 50%;
+}
+
+@media (max-width:950px) {
+    .step__block-image{
+        width: 45%;
+        padding: 20px 0px;
+        display: flex;
+    }
+
+    .step__photo{
+        width: 50%;
+    }
+
+    .step__block-text{
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    ._side__radius-left{
+        border-left: 7px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-left::before{
+        width: 15%;
+        left: -15%;
+    }
+
+    ._side__radius-right{
+        border-right: 7px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-right::before{
+        width: 15%;
+        right: -15%;
+    }
+}
+
+@media (max-width:680px) {
+
+    .step__block-image{
+        width: 42%;
+        padding: 20px 0px;
+        display: flex;
+    }
+
+    .step__photo{
+        width: 60%;
+    }
+
+    .step__block-text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    ._side__radius-left{
+        border-left: 7px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-left::before{
+        width: 15%;
+        left: -15%;
+    }
+
+    ._side__radius-right{
+        border-right: 7px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-right::before{
+        width: 15%;
+        right: -15%;
+    }
+}
+
+@media (max-width:680px) {
+
+    .step__block-image{
+        width: 38%;
+        padding: 20px 0px;
+        display: flex;
+    }
+
+    .step__photo{
+        width: 70%;
+    }
+
+    .step__block-text{
+
+        width: 55%;
+
+        font-size: 11px;
+        line-height: 14px;
+
+        padding: 5% 2%;
+    }
+
+    ._side__radius-left{
+        border-left: 5px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-left::before{
+        width: 10%;
+        left: -10%;
+    }
+
+    ._side__radius-right{
+        border-right: 5px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-right::before{
+        width: 10%;
+        right: -10%;
+    }
+}
+
+@media (max-width:421px) {
+
+    .step__block-image{
+        width: 40%;
+        padding: 20px 0px;
+        display: flex;
+    }
+
+    .step__photo{
+        width: 70%;
+    }
+
+    .step__block-text{
+
+        width: 65%;
+
+        font-size: 10px;
+        line-height: 10px;
+
+        padding: 5% 2%;
+    }
+
+    ._side__radius-left{
+        border-left: 5px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-left::before{
+        width: 10%;
+        left: -10%;
+    }
+
+    ._side__radius-right{
+        border-right: 5px solid rgb(255, 255, 0);
+    }
+    
+    ._side__radius-right::before{
+        width: 10%;
+        right: -10%;
+    }
+}
