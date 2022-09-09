@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/frontend_way_parallax/static/css/main.2fccd80b.css",
+    "main.js": "/frontend_way_parallax/static/js/main.82d49dc8.js",
+    "static/media/mountains.png": "/frontend_way_parallax/static/media/mountains.4e5d28ae57f9b98a9307.png",
+    "static/media/human.png": "/frontend_way_parallax/static/media/human.5fb640fd038eb406817a.png",
+    "static/media/clouds.jpg": "/frontend_way_parallax/static/media/clouds.07638d20fd9b12a9faa2.jpg",
+    "static/media/fullstack.jpg": "/frontend_way_parallax/static/media/fullstack.555a9b8433b7a0d44395.jpg",
+    "static/media/html5.jpg": "/frontend_way_parallax/static/media/html5.a11db8c76df7e2e6de97.jpg",
+    "static/media/framework.jpg": "/frontend_way_parallax/static/media/framework.3a5bcc7e81ee7bf2475b.jpg",
+    "static/media/JavaScript.jpg": "/frontend_way_parallax/static/media/JavaScript.f526e1615d6de150e091.jpg",
+    "static/media/css.jpg": "/frontend_way_parallax/static/media/css.c0448cd767d95433121f.jpg",
+    "static/media/github.png": "/frontend_way_parallax/static/media/github.b7e4a4fd80ebe351fca4.png",
+    "static/media/123.png": "/frontend_way_parallax/static/media/123.1cfdb6a2f2f6046e5710.png",
+    "static/media/html_code.png": "/frontend_way_parallax/static/media/html_code.306e23953b8ae4b11600.png",
+    "static/media/progress.png": "/frontend_way_parallax/static/media/progress.4882bea07bc54b796b31.png",
+    "static/media/scss.jpg": "/frontend_way_parallax/static/media/scss.ee408eb955948e827efd.jpg",
+    "index.html": "/frontend_way_parallax/index.html",
+    "main.2fccd80b.css.map": "/frontend_way_parallax/static/css/main.2fccd80b.css.map",
+    "main.82d49dc8.js.map": "/frontend_way_parallax/static/js/main.82d49dc8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fccd80b.css",
+    "static/js/main.82d49dc8.js"
+  ]
+}
